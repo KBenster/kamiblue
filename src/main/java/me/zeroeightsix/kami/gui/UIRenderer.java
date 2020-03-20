@@ -18,6 +18,7 @@ public class UIRenderer {
         KamiGUI gui = KamiMod.getInstance().getGuiManager();
 
         GL11.glDisable(GL11.GL_TEXTURE_2D);
+//        GlStateManager.scale(0.5f, 0.5f, 0.5f);
         for (Component c : gui.getChildren()) {
             if (c instanceof Frame) {
                 GlStateManager.pushMatrix();

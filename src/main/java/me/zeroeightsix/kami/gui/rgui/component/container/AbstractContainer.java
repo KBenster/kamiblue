@@ -5,6 +5,7 @@ import me.zeroeightsix.kami.gui.rgui.component.Component;
 import me.zeroeightsix.kami.gui.rgui.component.listen.RenderListener;
 import me.zeroeightsix.kami.gui.rgui.poof.use.AdditionPoof;
 import me.zeroeightsix.kami.gui.rgui.render.theme.Theme;
+import net.minecraft.client.renderer.GlStateManager;
 import org.lwjgl.opengl.GL11;
 
 import java.util.ArrayList;
@@ -69,6 +70,7 @@ public abstract class AbstractContainer extends AbstractComponent implements Con
 
     @Override
     public void renderChildren() {
+//        GlStateManager.scale(0.5f, 0.5f, 0.5f);
         for (Component c : getChildren()) {
             if (!c.isVisible()) continue;
 
